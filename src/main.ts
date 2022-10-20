@@ -1,7 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
+import VueGoodTablePlugin from 'vue-good-table';
 
-Vue.config.productionTip = false
+// import the styles
+import 'vue-good-table/dist/vue-good-table.css'
+
+Vue.use(VueGoodTablePlugin);
 
 new Vue({
   render: h => h(App),
